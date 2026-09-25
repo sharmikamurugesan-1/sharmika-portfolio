@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharmika Murugesan — Python & AI Engineer | Freelance Portfolio</title>
+  <meta name="description" content="I build Python & AI tools that automate the boring, amplify the useful. Freelance developer specializing in automation scripts, data pipelines, and AI-powered applications.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Hyper3D Atmospheric Lighting Canvas
+       ======================================================================== -->
+  <div class="hyper-ambient-lighting" aria-hidden="true">
+    <div class="blob-peach-top"></div>
+    <div class="blob-purple-center"></div>
+    <div class="blob-blue-lower"></div>
+  </div>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       Navigation Bar
+       ======================================================================== -->
+  <header class="site-nav">
+    <div class="container nav-container">
+      <div class="nav-left">
+        <a href="#hero" class="nav-logo">Sharmika<span>.</span></a>
+        <div class="nav-status-pill">
+          <span class="status-dot-pulse"></span>
+          <span>Available for freelance</span>
+        </div>
+      </div>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn-hyper-peach">Hire Me →</a>
+        <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#journey">Journey</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn-hyper-peach" style="text-align: center; margin-top: 12px;">Hire Me →</a>
+  </div>
+
+  <main>
+    <!-- ======================================================================
+         Hero Section with Hyper3D Layout & Interactive Studio
+         ====================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Content -->
+          <div class="hero-content-col">
+            <div class="hero-badge-pill">
+              <span class="status-dot-pulse"></span>
+              <span>Available for freelance — replies within 24h</span>
+            </div>
+
+            <h1 class="hero-title">
+              I build Python &amp; AI tools that <br>
+              <span class="glow-highlight">automate the boring, amplify the useful.</span>
+            </h1>
+
+            <p class="hero-subtext">
+              Automation scripts, data pipelines, and AI-powered applications for businesses that need working software — not another slide deck.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#work" class="btn-hyper-peach">See My Work →</a>
+              <a href="#contact" class="btn-hyper-ghost">Start a Project</a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="hero-stats-ribbon">
+              <div class="stat-item">
+                <div class="stat-val accent">05</div>
+                <div class="stat-lbl">Shipped Projects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-val">6</div>
+                <div class="stat-lbl">Services</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-val">Python</div>
+                <div class="stat-lbl">Primary Stack</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-val accent">24h</div>
+                <div class="stat-lbl">Reply Time</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-val">Full</div>
+                <div class="stat-lbl">Documentation</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Hyper3D Interactive Studio Interface Widget -->
+          <div class="hero-interactive-studio" aria-label="Interactive AI & Python Studio Demo">
+            <!-- Left Tool Dock -->
+            <div class="studio-dock">
+              <button class="dock-btn active" data-tool="automation" title="Python Automation (InvoiceFlow)">
+                <span>⚙️</span>
+                <span class="active-pip"></span>
+              </button>
+              <button class="dock-btn" data-tool="rag" title="AI Document RAG (DocuMind)">
+                <span>🧠</span>
+              </button>
+              <button class="dock-btn" data-tool="analytics" title="Data Analytics (SalesPulse)">
+                <span>📊</span>
+              </button>
+              <button class="dock-btn" data-tool="scraping" title="Web Scraping (PriceWatch)">
+                <span>🕸️</span>
+              </button>
+              <button class="dock-btn" data-tool="nlp" title="Resume Screening NLP (HireIQ)">
+                <span>🎯</span>
+              </button>
+            </div>
+
+            <!-- Central Studio Box -->
+            <div class="studio-main-card">
+              <div class="studio-card-header">
+                <div class="studio-title-area">
+                  <span style="font-size: 18px;">⚡</span>
+                  <h3 id="studioToolTitle">InvoiceFlow Pipeline</h3>
+                </div>
+                <span class="engine-tag" id="studioToolEngine">Python 3.12 · PyMuPDF</span>
+              </div>
+
+              <!-- Prompt Input Area -->
+              <div class="studio-prompt-box">
+                <div class="studio-prompt-label">
+                  <span>Target Execution Prompt</span>
+                  <span style="color: var(--peach-300);">Simulated Live</span>
+                </div>
+                <textarea id="studioPromptInput" class="studio-prompt-input" rows="2">Extract vendor names, line items, totals, and invoice dates from 42 scanned PDFs into Excel.</textarea>
+              </div>
+
+              <!-- Preset Quick Chips -->
+              <div class="studio-preset-chips" id="studioPresetChips">
+                <!-- Dynamically populated by app.js -->
+              </div>
+
+              <!-- Live Execution Console -->
+              <div class="studio-output-console" id="studioOutputConsole" role="region" aria-live="polite">
+                <!-- Logs rendered here -->
+              </div>
+
+              <!-- Studio Footer: Run Button & Spec Badges (Hyper3D Style) -->
+              <div class="studio-footer">
+                <button class="btn-generate-tool" id="btnRunStudio">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  EXECUTE PIPELINE
+                </button>
+                <div class="studio-specs-pills">
+                  <div class="spec-badge">
+                    <span>⏱️</span>
+                    <span id="studioLatencyBadge">142ms</span>
+                  </div>
+                  <div class="spec-badge">
+                    <span>⚡</span>
+                    <span id="studioStackBadge">PyMuPDF + Pandas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Scrolling Tech Strip (Infinite Marquee)
+         ====================================================================== -->
+    <section class="tech-strip-section" aria-label="Technologies Marquee">
+      <div class="marquee-container">
+        <div class="marquee-track">
+          <span class="marquee-item">Python</span><span class="marquee-dot"></span>
+          <span class="marquee-item">FastAPI</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Flask</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Pandas</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Scikit-learn</span><span class="marquee-dot"></span>
+          <span class="marquee-item">OpenAI API</span><span class="marquee-dot"></span>
+          <span class="marquee-item">RAG</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Selenium</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Power BI</span><span class="marquee-dot"></span>
+          <span class="marquee-item">SQLite</span><span class="marquee-dot"></span>
+          <span class="marquee-item">NumPy</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Matplotlib</span><span class="marquee-dot"></span>
+          <span class="marquee-item">NLP</span><span class="marquee-dot"></span>
+          <span class="marquee-item">BeautifulSoup</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Git</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Machine Learning</span><span class="marquee-dot"></span>
+          <span class="marquee-item">LLM APIs</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Prompt Engineering</span><span class="marquee-dot"></span>
+          <span class="marquee-item">REST APIs</span><span class="marquee-dot"></span>
+          <!-- Duplicate for continuous scroll loop -->
+          <span class="marquee-item">Python</span><span class="marquee-dot"></span>
+          <span class="marquee-item">FastAPI</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Flask</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Pandas</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Scikit-learn</span><span class="marquee-dot"></span>
+          <span class="marquee-item">OpenAI API</span><span class="marquee-dot"></span>
+          <span class="marquee-item">RAG</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Selenium</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Power BI</span><span class="marquee-dot"></span>
+          <span class="marquee-item">SQLite</span><span class="marquee-dot"></span>
+          <span class="marquee-item">NumPy</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Matplotlib</span><span class="marquee-dot"></span>
+          <span class="marquee-item">NLP</span><span class="marquee-dot"></span>
+          <span class="marquee-item">BeautifulSoup</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Git</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Machine Learning</span><span class="marquee-dot"></span>
+          <span class="marquee-item">LLM APIs</span><span class="marquee-dot"></span>
+          <span class="marquee-item">Prompt Engineering</span><span class="marquee-dot"></span>
+          <span class="marquee-item">REST APIs</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         About Section & Bento Info Cards
+         ====================================================================== -->
+    <section class="section-spacing" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left Column -->
+          <div class="about-content-left">
+            <span class="section-label">About Me</span>
+            <h2 class="about-heading">An engineer who ships, documents, and explains</h2>
+            <div class="about-paragraphs">
+              <p>
+                I'm Sharmika Murugesan — a 3rd-year B.Tech Artificial Intelligence &amp; Data Science student who builds practical software with Python, machine learning, and AI technologies.
+              </p>
+              <p>
+                I turn messy real-world problems into working tools — automating repetitive tasks, building data pipelines, or creating AI assistants that actually get used day-to-day.
+              </p>
+              <p>
+                Every project I deliver comes with clean code, full documentation, and a handover that makes it easy for your team to maintain — no black boxes, no guesswork.
+              </p>
+            </div>
+            <div class="about-actions">
+              <a href="#work" class="btn-hyper-peach">View My Work →</a>
+              <a href="#contact" class="btn-hyper-ghost">Get In Touch</a>
+            </div>
+          </div>
+
+          <!-- Right Column: Hyper3D Bento Info Cards -->
+          <div class="about-bento-cards">
+            <div class="bento-info-card">
+              <div class="bento-icon-box">🎓</div>
+              <div>
+                <h4>Anna University</h4>
+                <p>B.Tech, Artificial Intelligence &amp; Data Science — 3rd Year</p>
+              </div>
+            </div>
+            <div class="bento-info-card">
+              <div class="bento-icon-box">🤖</div>
+              <div>
+                <h4>AI &amp; Machine Learning</h4>
+                <p>NLP, Scikit-learn, LLM APIs, RAG, Generative AI</p>
+              </div>
+            </div>
+            <div class="bento-info-card">
+              <div class="bento-icon-box">🐍</div>
+              <div>
+                <h4>Python Developer</h4>
+                <p>Flask, FastAPI, Pandas, Automation, Web Scraping</p>
+              </div>
+            </div>
+            <div class="bento-info-card">
+              <div class="bento-icon-box">📊</div>
+              <div>
+                <h4>Data Analysis</h4>
+                <p>Matplotlib, Power BI, NumPy, Business Reporting</p>
+              </div>
+            </div>
+            <div class="bento-info-card">
+              <div class="bento-icon-box">🌍</div>
+              <div>
+                <h4>Based in Tamil Nadu, India</h4>
+                <p>Available for remote freelance worldwide</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Services Section (Hyper3D Bento Grid)
+         ====================================================================== -->
+    <section class="section-spacing" id="services" style="background: rgba(14, 15, 23, 0.45); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Services</span>
+          <h2 class="section-title">What I can build for you</h2>
+          <p class="section-subtext">Scoped to the actual problem. I'd rather build one thing well than five things badly.</p>
+        </div>
+
+        <div class="services-bento-grid">
+          <!-- Service 1 -->
+          <div class="service-bento-card">
+            <div>
+              <div class="service-top-row">
+                <span class="service-icon-glyph">⚙️</span>
+                <span class="service-proof-badge">Proof: InvoiceFlow</span>
+              </div>
+              <h3>Python Automation</h3>
+              <p>Excel &amp; CSV batch processing, report generation, file management, email automation, scheduled workflow scripts.</p>
+            </div>
+            <div class="service-tags-wrap">
+              <span class="service-tag">Pandas</span>
+              <span class="service-tag">Schedule</span>
+              <span class="service-tag">OpenPyXL</span>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-bento-card">
+            <div>
+              <div class="service-top-row">
+                <span class="service-icon-glyph">🕸️</span>
+                <span class="service-proof-badge">Proof: PriceWatch</span>
+              </div>
+              <h3>Web Scraping &amp; Data Extraction</h3>
+              <p>Structured data collection, multi-page scrapers, price monitors, data cleaning pipelines, CSV/Excel export.</p>
+            </div>
+            <div class="service-tags-wrap">
+              <span class="service-tag">Selenium</span>
+              <span class="service-tag">BeautifulSoup</span>
+              <span class="service-tag">Scrapy</span>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-bento-card">
+            <div>
+              <div class="service-top-row">
+                <span class="service-icon-glyph">📊</span>
+                <span class="service-proof-badge">Proof: SalesPulse</span>
+              </div>
+              <h3>Data Analysis &amp; Dashboards</h3>
+              <p>Exploratory analysis, interactive visualizations, Power BI dashboards, business insight reports.</p>
+            </div>
+            <div class="service-tags-wrap">
+              <span class="service-tag">Pandas</span>
+              <span class="service-tag">Matplotlib</span>
+              <span class="service-tag">Power BI</span>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-bento-card">
+            <div>
+              <div class="service-top-row">
+                <span class="service-icon-glyph">🧠</span>
+                <span class="service-proof-badge">Proof: DocuMind</span>
+              </div>
+              <h3>AI &amp; LLM Integration</h3>
+              <p>AI assistants, RAG document Q&amp;A, chatbots, OpenAI/Claude API integrations, prompt engineering.</p>
+            </div>
+            <div class="service-tags-wrap">
+              <span class="service-tag">LLM APIs</span>
+              <span class="service-tag">RAG</span>
+              <span class="service-tag">FAISS</span>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-bento-card">
+            <div>
+              <div class="service-top-row">
+                <span class="service-icon-glyph">🔌</span>
+                <span class="service-proof-badge">Proof: DocuMind, HireIQ</span>
+              </div>
+              <h3>API Development</h3>
+              <p>FastAPI/Flask REST APIs, third-party integrations, webhook handlers, backend services with full docs.</p>
+            </div>
+            <div class="service-tags-wrap">
+              <span class="service-tag">FastAPI</span>
+              <span class="service-tag">Flask</span>
+              <span class="service-tag">SQLite</span>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-bento-card">
+            <div>
+              <div class="service-top-row">
+                <span class="service-icon-glyph">🔬</span>
+                <span class="service-proof-badge">Proof: HireIQ</span>
+              </div>
+              <h3>Machine Learning Models</h3>
+              <p>Classification, regression, NLP pipelines, model training, evaluation, deployment-ready packaging.</p>
+            </div>
+            <div class="service-tags-wrap">
+              <span class="service-tag">Scikit-learn</span>
+              <span class="service-tag">NLP</span>
+              <span class="service-tag">Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Tech Stack / Skills Section
+         ====================================================================== -->
+    <section class="section-spacing" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Tech Stack</span>
+          <h2 class="section-title">Tools I actually use</h2>
+          <p class="section-subtext">Nothing listed for show — every skill here has shipped in a real project.</p>
+        </div>
+
+        <div class="skills-bento-grid">
+          <!-- Cat 1 -->
+          <div class="skill-bento-card">
+            <h4 class="skill-category-title">
+              <span>💻</span> Programming
+            </h4>
+            <div class="skills-pill-cloud">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">HTML</span>
+              <span class="skill-pill">CSS</span>
+            </div>
+          </div>
+
+          <!-- Cat 2 -->
+          <div class="skill-bento-card">
+            <h4 class="skill-category-title">
+              <span>🤖</span> AI &amp; ML
+            </h4>
+            <div class="skills-pill-cloud">
+              <span class="skill-pill">Scikit-learn</span>
+              <span class="skill-pill">NLP</span>
+              <span class="skill-pill">Generative AI</span>
+              <span class="skill-pill">Model Dev</span>
+              <span class="skill-pill">LLM APIs</span>
+            </div>
+          </div>
+
+          <!-- Cat 3 -->
+          <div class="skill-bento-card">
+            <h4 class="skill-category-title">
+              <span>📊</span> Data
+            </h4>
+            <div class="skills-pill-cloud">
+              <span class="skill-pill">Pandas</span>
+              <span class="skill-pill">NumPy</span>
+              <span class="skill-pill">Matplotlib</span>
+              <span class="skill-pill">Seaborn</span>
+              <span class="skill-pill">Power BI</span>
+            </div>
+          </div>
+
+          <!-- Cat 4 -->
+          <div class="skill-bento-card">
+            <h4 class="skill-category-title">
+              <span>🌐</span> Web Dev
+            </h4>
+            <div class="skills-pill-cloud">
+              <span class="skill-pill">Flask</span>
+              <span class="skill-pill">FastAPI</span>
+              <span class="skill-pill">REST APIs</span>
+              <span class="skill-pill">SQLite</span>
+              <span class="skill-pill">Git</span>
+            </div>
+          </div>
+
+          <!-- Cat 5 -->
+          <div class="skill-bento-card">
+            <h4 class="skill-category-title">
+              <span>⚡</span> Automation
+            </h4>
+            <div class="skills-pill-cloud">
+              <span class="skill-pill">Selenium</span>
+              <span class="skill-pill">BeautifulSoup</span>
+              <span class="skill-pill">API Automation</span>
+              <span class="skill-pill">Scheduling</span>
+            </div>
+          </div>
+
+          <!-- Cat 6 -->
+          <div class="skill-bento-card">
+            <h4 class="skill-category-title">
+              <span>🧠</span> AI Applications
+            </h4>
+            <div class="skills-pill-cloud">
+              <span class="skill-pill">RAG</span>
+              <span class="skill-pill">AI Chatbots</span>
+              <span class="skill-pill">FAISS</span>
+              <span class="skill-pill">Prompt Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Projects Section (5 Case Studies with Hyper3D Visual Transformations)
+         ====================================================================== -->
+    <section class="section-spacing" id="work" style="background: rgba(14, 15, 23, 0.45); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Case Studies</span>
+          <h2 class="section-title">Shipped Projects &amp; Real Impact</h2>
+          <p class="section-subtext">5 end-to-end applications solving actual business bottlenecks with clean code and full documentation.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="projects-header-filter">
+          <button class="project-filter-btn active" data-filter="all">All Projects (5)</button>
+          <button class="project-filter-btn" data-filter="automation">Automation</button>
+          <button class="project-filter-btn" data-filter="ai">AI &amp; LLMs</button>
+          <button class="project-filter-btn" data-filter="data">Data Analytics</button>
+          <button class="project-filter-btn" data-filter="scraping">Web Scraping</button>
+        </div>
+
+        <div class="projects-stack-list">
+
+          <!-- Case 01 — InvoiceFlow -->
+          <article class="case-study-card" data-category="automation">
+            <div class="case-card-inner">
+              <div class="case-header-row">
+                <div>
+                  <div class="case-meta">
+                    <span class="case-number-badge">Case 01</span>
+                    <span class="case-subtitle">Python · PDF Parsing · Automation · Excel</span>
+                  </div>
+                  <h3 class="case-title">InvoiceFlow</h3>
+                </div>
+                <a href="https://github.com/sharmika-murugesan/InvoiceFlow" target="_blank" rel="noopener noreferrer" class="btn-hyper-ghost" style="padding: 9px 20px; font-size: 13px;">
+                  View on GitHub ↗
+                </a>
+              </div>
+
+              <div class="case-impact-pill">
+                <span>⚡</span>
+                <span>Cuts 4 hours of manual invoice entry to under 5 minutes per batch</span>
+              </div>
+
+              <p class="case-description">
+                A Python tool that reads PDF and scanned invoices, extracts vendor names, amounts, dates, and line items, then auto-populates a structured Excel report — ready for accounting review. Built for small businesses tired of manual data entry.
+              </p>
+
+              <!-- Hyper3D Transformation Flow Diagram -->
+              <div class="transformation-diagram">
+                <div class="trans-step">
+                  <div class="trans-step-icon">📄</div>
+                  <div class="trans-step-info">
+                    <h5>Raw PDF Invoices</h5>
+                    <p>Scanned files &amp; digital PDFs</p>
+                  </div>
+                </div>
+                <div class="trans-arrow">➔</div>
+                <div class="trans-step">
+                  <div class="trans-step-icon">⚙️</div>
+                  <div class="trans-step-info">
+                    <h5>InvoiceFlow Engine</h5>
+                    <p>PyMuPDF regex field extraction</p>
+                  </div>
+                </div>
+                <div class="trans-arrow">➔</div>
+                <div class="trans-step">
+                  <div class="trans-step-icon">📊</div>
+                  <div class="trans-step-info">
+                    <h5>Structured Excel Output</h5>
+                    <p>Validated &amp; accounting-ready</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-stack-pills">
+                <span class="case-stack-tag">Python</span>
+                <span class="case-stack-tag">PyMuPDF</span>
+                <span class="case-stack-tag">Pandas</span>
+                <span class="case-stack-tag">OpenPyXL</span>
+                <span class="case-stack-tag">Regex</span>
+                <span class="case-stack-tag">Schedule</span>
+              </div>
+
+              <div class="case-features-grid">
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>PDF &amp; image invoice parsing</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Auto field extraction (vendor, total, date)</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Structured Excel report output</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Duplicate invoice detection</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Batch folder processing</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Email summary on completion</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 02 — SalesPulse -->
+          <article class="case-study-card" data-category="data">
+            <div class="case-card-inner">
+              <div class="case-header-row">
+                <div>
+                  <div class="case-meta">
+                    <span class="case-number-badge">Case 02</span>
+                    <span class="case-subtitle">Data Analysis · Visualization · Power BI · Python</span>
+                  </div>
+                  <h3 class="case-title">SalesPulse</h3>
+                </div>
+                <a href="https://github.com/sharmika-murugesan/SalesPulse" target="_blank" rel="noopener noreferrer" class="btn-hyper-ghost" style="padding: 9px 20px; font-size: 13px;">
+                  View on GitHub ↗
+                </a>
+              </div>
+
+              <div class="case-impact-pill">
+                <span>⚡</span>
+                <span>Turns raw CSV exports into actionable insights in seconds</span>
+              </div>
+
+              <p class="case-description">
+                End-to-end sales analytics pipeline that ingests raw transaction CSVs, cleans and transforms data with Pandas, and outputs an interactive Power BI dashboard showing revenue trends, top products, regional performance, and month-over-month growth.
+              </p>
+
+              <!-- Hyper3D Transformation Flow Diagram -->
+              <div class="transformation-diagram">
+                <div class="trans-step">
+                  <div class="trans-step-icon">📂</div>
+                  <div class="trans-step-info">
+                    <h5>Raw Transaction CSVs</h5>
+                    <p>Unformatted POS data dumps</p>
+                  </div>
+                </div>
+                <div class="trans-arrow">➔</div>
+                <div class="trans-step">
+                  <div class="trans-step-icon">🐍</div>
+                  <div class="trans-step-info">
+                    <h5>Pandas Clean &amp; Transform</h5>
+                    <p>Null handling &amp; MoM calculations</p>
+                  </div>
+                </div>
+                <div class="trans-arrow">➔</div>
+                <div class="trans-step">
+                  <div class="trans-step-icon">📈</div>
+                  <div class="trans-step-info">
+                    <h5>Interactive Power BI</h5>
+                    <p>Live revenue &amp; heatmaps</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-stack-pills">
+                <span class="case-stack-tag">Python</span>
+                <span class="case-stack-tag">Pandas</span>
+                <span class="case-stack-tag">Matplotlib</span>
+                <span class="case-stack-tag">Power BI</span>
+                <span class="case-stack-tag">SQLite</span>
+                <span class="case-stack-tag">NumPy</span>
+              </div>
+
+              <div class="case-features-grid">
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Automated data cleaning pipeline</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Revenue &amp; profit trend charts</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Product category breakdown</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Regional performance heatmap</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Month-over-month comparison</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Exportable PDF summary report</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 03 — DocuMind -->
+          <article class="case-study-card" data-category="ai">
+            <div class="case-card-inner">
+              <div class="case-header-row">
+                <div>
+                  <div class="case-meta">
+                    <span class="case-number-badge">Case 03</span>
+                    <span class="case-subtitle">AI · RAG · LLM · FastAPI</span>
+                  </div>
+                  <h3 class="case-title">DocuMind</h3>
+                </div>
+                <a href="https://github.com/sharmika-murugesan/DocuMind" target="_blank" rel="noopener noreferrer" class="btn-hyper-ghost" style="padding: 9px 20px; font-size: 13px;">
+                  View on GitHub ↗
+                </a>
+              </div>
+
+              <div class="case-impact-pill">
+                <span>⚡</span>
+                <span>Ask questions to any PDF in plain English — no reading required</span>
+              </div>
+
+              <p class="case-description">
+                A Retrieval-Augmented Generation (RAG) application that lets users upload PDF documents and ask natural language questions. The system chunks, embeds, and retrieves relevant sections, then uses an LLM to produce accurate, cited answers via a FastAPI backend.
+              </p>
+
+              <!-- Hyper3D Transformation Flow Diagram -->
+              <div class="transformation-diagram">
+                <div class="trans-step">
+                  <div class="trans-step-icon">📑</div>
+                  <div class="trans-step-info">
+                    <h5>Large PDF Knowledge</h5>
+                    <p>Policy, legal &amp; user docs</p>
+                  </div>
+                </div>
+                <div class="trans-arrow">➔</div>
+                <div class="trans-step">
+                  <div class="trans-step-icon">🧠</div>
+                  <div class="trans-step-info">
+                    <h5>FAISS Vector Retrieval</h5>
+                    <p>Semantic embeddings &amp; context</p>
+                  </div>
+                </div>
+                <div class="trans-arrow">➔</div>
+                <div class="trans-step">
+                  <div class="trans-step-icon">💬</div>
+                  <div class="trans-step-info">
+                    <h5>Accurate Cited Answer</h5>
+                    <p>Hallucination-free direct answers</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-stack-pills">
+                <span class="case-stack-tag">Python</span>
+                <span class="case-stack-tag">FastAPI</span>
+                <span class="case-stack-tag">LLM API</span>
+                <span class="case-stack-tag">FAISS</span>
+                <span class="case-stack-tag">PyMuPDF</span>
+                <span class="case-stack-tag">HTML/JS</span>
+              </div>
+
+              <div class="case-features-grid">
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>PDF upload &amp; text extraction</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Semantic vector search (FAISS)</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Natural language Q&amp;A</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Source-cited answers</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Multi-document support</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>REST API interface</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 04 — PriceWatch -->
+          <article class="case-study-card" data-category="scraping">
+            <div class="case-card-inner">
+              <div class="case-header-row">
+                <div>
+                  <div class="case-meta">
+                    <span class="case-number-badge">Case 04</span>
+                    <span class="case-subtitle">Web Scraping · Automation · Python · Alerts</span>
+                  </div>
+                  <h3 class="case-title">PriceWatch</h3>
+                </div>
+                <a href="https://github.com/sharmika-murugesan/PriceWatch" target="_blank" rel="noopener noreferrer" class="btn-hyper-ghost" style="padding: 9px 20px; font-size: 13px;">
+                  View on GitHub ↗
+                </a>
+              </div>
+
+              <div class="case-impact-pill">
+                <span>⚡</span>
+                <span>Monitors hundreds of product pages 24/7 and alerts on price drops</span>
+              </div>
+
+              <p class="case-description">
+                A scheduled web scraping system that tracks product prices across e-commerce sites, stores historical data in SQLite, and sends automated email alerts when prices drop below user-set thresholds. Runs on a cron schedule with zero manual intervention.
+              </p>
+
+              <!-- Hyper3D Transformation Flow Diagram -->
+              <div class="transformation-diagram">
+                <div class="trans-step">
+                  <div class="trans-step-icon">🛒</div>
+                  <div class="trans-step-info">
+                    <h5>E-Commerce Product URLs</h5>
+                    <p>Live listings across web stores</p>
+                  </div>
+                </div>
+                <div class="trans-arrow">➔</div>
+                <div class="trans-step">
+                  <div class="trans-step-icon">🕸️</div>
+                  <div class="trans-step-info">
+                    <h5>Scheduled Scraper</h5>
+                    <p>Selenium + Anti-block rotation</p>
+                  </div>
+                </div>
+                <div class="trans-arrow">➔</div>
+                <div class="trans-step">
+                  <div class="trans-step-icon">🔔</div>
+                  <div class="trans-step-info">
+                    <h5>Instant Price Alerts</h5>
+                    <p>Automated SMTP &amp; Telegram</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-stack-pills">
+                <span class="case-stack-tag">Python</span>
+                <span class="case-stack-tag">Selenium</span>
+                <span class="case-stack-tag">BeautifulSoup</span>
+                <span class="case-stack-tag">SQLite</span>
+                <span class="case-stack-tag">Schedule</span>
+                <span class="case-stack-tag">SMTP</span>
+              </div>
+
+              <div class="case-features-grid">
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Multi-site product tracking</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Historical price storage</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Price drop email alerts</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Configurable threshold rules</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Price trend charts</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Anti-block rotation support</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 05 — HireIQ -->
+          <article class="case-study-card" data-category="ai">
+            <div class="case-card-inner">
+              <div class="case-header-row">
+                <div>
+                  <div class="case-meta">
+                    <span class="case-number-badge">Case 05</span>
+                    <span class="case-subtitle">NLP · Machine Learning · Python · HR Automation</span>
+                  </div>
+                  <h3 class="case-title">HireIQ</h3>
+                </div>
+                <a href="https://github.com/sharmika-murugesan/HireIQ" target="_blank" rel="noopener noreferrer" class="btn-hyper-ghost" style="padding: 9px 20px; font-size: 13px;">
+                  View on GitHub ↗
+                </a>
+              </div>
+
+              <div class="case-impact-pill">
+                <span>⚡</span>
+                <span>Screens and ranks 100 resumes against a job description in under 30 seconds</span>
+              </div>
+
+              <p class="case-description">
+                An NLP-powered resume screening tool that parses uploaded resumes, extracts skills, experience, and education, then scores and ranks candidates against a job description using TF-IDF similarity and keyword matching — outputting a ranked shortlist as Excel.
+              </p>
+
+              <!-- Hyper3D Transformation Flow Diagram -->
+              <div class="transformation-diagram">
+                <div class="trans-step">
+                  <div class="trans-step-icon">📁</div>
+                  <div class="trans-step-info">
+                    <h5>100+ Resumes &amp; JD</h5>
+                    <p>Unstructured PDF/DOCX batch</p>
+                  </div>
+                </div>
+                <div class="trans-arrow">➔</div>
+                <div class="trans-step">
+                  <div class="trans-step-icon">🔬</div>
+                  <div class="trans-step-info">
+                    <h5>NLP &amp; TF-IDF Scoring</h5>
+                    <p>Cosine similarity &amp; skills matcher</p>
+                  </div>
+                </div>
+                <div class="trans-arrow">➔</div>
+                <div class="trans-step">
+                  <div class="trans-step-icon">📋</div>
+                  <div class="trans-step-info">
+                    <h5>Ranked Shortlist Excel</h5>
+                    <p>Top candidate scores in 30 sec</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-stack-pills">
+                <span class="case-stack-tag">Python</span>
+                <span class="case-stack-tag">NLP</span>
+                <span class="case-stack-tag">Scikit-learn</span>
+                <span class="case-stack-tag">PyMuPDF</span>
+                <span class="case-stack-tag">Pandas</span>
+                <span class="case-stack-tag">Flask</span>
+              </div>
+
+              <div class="case-features-grid">
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Batch PDF resume parsing</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Skill &amp; experience extraction</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Job description match score</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Candidate ranking &amp; shortlist</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Excel report export</span>
+                </div>
+                <div class="case-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Flask web interface</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Process Section (6 Steps)
+         ====================================================================== -->
+    <section class="section-spacing" id="process">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Process</span>
+          <h2 class="section-title">How I work</h2>
+          <p class="section-subtext">Transparent, predictable, no surprises mid-project.</p>
+        </div>
+
+        <div class="process-grid-steps">
+          <!-- Step 01 -->
+          <div class="process-step-card">
+            <div class="step-num-watermark">01</div>
+            <h4>Discover</h4>
+            <p>Quick call or written brief to understand the real problem — not just the feature request. I ask questions until the scope is actually clear.</p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="process-step-card">
+            <div class="step-num-watermark">02</div>
+            <h4>Scope &amp; Plan</h4>
+            <p>You get a written plan: approach, tools, timeline, and what "done" looks like — before any code is written.</p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="process-step-card">
+            <div class="step-num-watermark">03</div>
+            <h4>Build in the Open</h4>
+            <p>I share working progress at regular checkpoints, not just a final reveal. You see the thing taking shape, and can redirect early if needed.</p>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="process-step-card">
+            <div class="step-num-watermark">04</div>
+            <h4>Test Against Reality</h4>
+            <p>Edge cases, bad inputs, real data — not just the happy path. Bugs get caught before you find them.</p>
+          </div>
+
+          <!-- Step 05 -->
+          <div class="process-step-card">
+            <div class="step-num-watermark">05</div>
+            <h4>Deliver &amp; Handover</h4>
+            <p>Clean code, a README, a setup guide, and a short walkthrough call if needed.</p>
+          </div>
+
+          <!-- Step 06 -->
+          <div class="process-step-card">
+            <div class="step-num-watermark">06</div>
+            <h4>Support Window</h4>
+            <p>7 days of free post-delivery support for bug fixes and quick questions.</p>
+          </div>
+        </div>
+
+        <!-- Availability & Where I'm At Right Now (Bento Pair) -->
+        <div class="availability-container">
+          <div class="availability-card">
+            <span class="section-label" style="font-size: 11px;">Availability</span>
+            <h3>How engagements work</h3>
+            <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 20px;">Straightforward, scoped upfront — no mystery invoices.</p>
+            <ul class="availability-list">
+              <li>
+                <span class="bullet-icon">📞</span>
+                <span><strong>Free 15-min intro call</strong> to understand scope before any commitment</span>
+              </li>
+              <li>
+                <span class="bullet-icon">💼</span>
+                <span><strong>Project-based pricing</strong> — quoted after scope is clear, not hourly guesswork</span>
+              </li>
+              <li>
+                <span class="bullet-icon">⚡</span>
+                <span><strong>Typical turnaround:</strong> 3 days – 2 weeks depending on scope</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="availability-card">
+            <span class="section-label" style="font-size: 11px;">Status Note</span>
+            <h3>Where I'm at right now</h3>
+            <div class="now-quote-box">
+              <p>
+                "Actively building freelance-ready projects and taking on early client work. Every case study above is live on GitHub with full documentation — dig in before you reach out."
+              </p>
+            </div>
+            <div style="margin-top: 24px;">
+              <a href="https://github.com/sharmika-murugesan" target="_blank" rel="noopener noreferrer" class="btn-hyper-ghost" style="padding: 10px 22px; font-size: 13px;">
+                Explore GitHub Repositories ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Why Work With Me Section
+         ====================================================================== -->
+    <section class="section-spacing" style="background: rgba(14, 15, 23, 0.45); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Why Work With Me</span>
+          <h2 class="section-title">What you actually get</h2>
+        </div>
+
+        <div class="why-bento-grid">
+          <!-- 1 -->
+          <div class="why-benefit-card">
+            <div class="why-icon-box">🎯</div>
+            <h4>Problem-First Thinking</h4>
+            <p>I focus on solving the actual business problem, not just writing code. Every decision ties back to the outcome you need.</p>
+          </div>
+
+          <!-- 2 -->
+          <div class="why-benefit-card">
+            <div class="why-icon-box">🧹</div>
+            <h4>Clean, Maintainable Code</h4>
+            <p>No over-engineering. I write commented, readable code your team can extend after delivery — no black boxes.</p>
+          </div>
+
+          <!-- 3 -->
+          <div class="why-benefit-card">
+            <div class="why-icon-box">🕐</div>
+            <h4>Honest Timelines</h4>
+            <p>Realistic estimates, blockers flagged early — not on the deadline.</p>
+          </div>
+
+          <!-- 4 -->
+          <div class="why-benefit-card">
+            <div class="why-icon-box">💬</div>
+            <h4>Clear Communication</h4>
+            <p>You'll always know what's done, what's next, and where things stand. No chasing required.</p>
+          </div>
+
+          <!-- 5 -->
+          <div class="why-benefit-card">
+            <div class="why-icon-box">📄</div>
+            <h4>Full Documentation</h4>
+            <p>Every deliverable includes a README, setup guide, and usage notes.</p>
+          </div>
+
+          <!-- 6 -->
+          <div class="why-benefit-card">
+            <div class="why-icon-box">🛡️</div>
+            <h4>Post-Delivery Support</h4>
+            <p>7 days of free support after delivery for bug fixes and questions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Journey Section (Timeline)
+         ====================================================================== -->
+    <section class="section-spacing" id="journey">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Journey</span>
+          <h2 class="section-title">My path so far</h2>
+        </div>
+
+        <div class="timeline-track-wrap">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-year-col">2023 – Present</div>
+            <div class="timeline-card-content">
+              <h4>B.Tech, AI &amp; Data Science — Anna University</h4>
+              <p>Currently a 3rd-year student, building a strong foundation in machine learning, data analysis, and full-stack Python development alongside coursework.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-year-col">2024</div>
+            <div class="timeline-card-content">
+              <h4>Started Shipping Projects</h4>
+              <p>Moved from coursework to building real, end-to-end tools — automation scripts, ML pipelines, AI applications — all documented and public on GitHub.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-year-col">2025 – Present</div>
+            <div class="timeline-card-content">
+              <h4>5+ Projects Live</h4>
+              <p>Built and shipped 5 complete projects across automation, web scraping, AI/LLM integration, and NLP.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-year-col">Now</div>
+            <div class="timeline-card-content">
+              <h4>Open to Freelance Work</h4>
+              <p>Taking on freelance projects in Python automation, data analysis, and AI application development.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Contact / Start a Project Section (Integrated Latest Version)
+         ====================================================================== -->
+    <section class="section-spacing" id="contact" style="background: rgba(14, 15, 23, 0.45); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Let's talk about your project</h2>
+          <p class="section-subtext">Fill in a few details below — I'll review your requirements and get back to you within 24 hours with next steps.</p>
+        </div>
+
+        <div class="contact-grid-wrap">
+          <!-- Left: Trust Panel -->
+          <div class="contact-trust-panel">
+            <h3 class="trust-panel-title">Why clients reach out to me</h3>
+            <ul class="trust-check-list">
+              <li>
+                <span class="check-icon">✅</span>
+                <span>Clear scope &amp; timeline before work begins</span>
+              </li>
+              <li>
+                <span class="check-icon">✅</span>
+                <span>Regular progress updates — no radio silence</span>
+              </li>
+              <li>
+                <span class="check-icon">✅</span>
+                <span>Clean, documented code you can actually maintain</span>
+              </li>
+              <li>
+                <span class="check-icon">✅</span>
+                <span>7 days of free support after delivery</span>
+              </li>
+            </ul>
+
+            <div class="quick-info-table">
+              <div class="quick-info-row">
+                <div class="quick-info-key"><span>⏱️</span> Response Time</div>
+                <div class="quick-info-val">Within 24 hours</div>
+              </div>
+              <div class="quick-info-row">
+                <div class="quick-info-key"><span>📞</span> Consultation</div>
+                <div class="quick-info-val">Free 15-min intro call</div>
+              </div>
+              <div class="quick-info-row">
+                <div class="quick-info-key"><span>🌍</span> Availability</div>
+                <div class="quick-info-val">Remote, worldwide</div>
+              </div>
+              <div class="quick-info-row">
+                <div class="quick-info-key"><span>💼</span> Engagement</div>
+                <div class="quick-info-val">Project-based, scoped upfront</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Inquiry Form -->
+          <div class="contact-form-box">
+            <h3 class="form-header-title">Tell me about your project</h3>
+
+            <form class="inquiry-form" id="projectInquiryForm" novalidate>
+              <!-- Full Name & Phone -->
+              <div class="form-two-cols">
+                <div class="form-group">
+                  <label for="fullName">Full Name <span class="req">*</span></label>
+                  <input type="text" id="fullName" class="form-control" placeholder="e.g. John Doe" required>
+                  <span class="form-err-msg" id="errName"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="phoneNumber">Phone / WhatsApp Number <span class="req">*</span></label>
+                  <input type="tel" id="phoneNumber" class="form-control" placeholder="+91 98765 43210 (with country code)" required>
+                  <span class="form-err-msg" id="errPhone"></span>
+                </div>
+              </div>
+
+              <!-- Email Address -->
+              <div class="form-group">
+                <label for="emailAddress">Email Address <span class="req">*</span></label>
+                <input type="email" id="emailAddress" class="form-control" placeholder="john@example.com" required>
+                <span class="form-err-msg" id="errEmail"></span>
+              </div>
+
+              <!-- Service Type -->
+              <div class="form-group">
+                <label for="serviceType">Service Type <span class="req">*</span></label>
+                <select id="serviceType" class="form-control" required>
+                  <option value="" disabled selected>Select a service type...</option>
+                  <option value="Python Automation">Python Automation</option>
+                  <option value="Web Scraping & Data Extraction">Web Scraping &amp; Data Extraction</option>
+                  <option value="Data Analysis & Dashboards">Data Analysis &amp; Dashboards</option>
+                  <option value="AI & LLM Integration">AI &amp; LLM Integration</option>
+                  <option value="API Development">API Development</option>
+                  <option value="Machine Learning Model">Machine Learning Model</option>
+                  <option value="Not sure — need guidance">Not sure — need guidance</option>
+                </select>
+                <span class="form-err-msg" id="errService"></span>
+              </div>
+
+              <!-- Budget & Timeline -->
+              <div class="form-two-cols">
+                <div class="form-group">
+                  <label for="projectBudget">Project Budget (optional)</label>
+                  <select id="projectBudget" class="form-control">
+                    <option value="" selected>Select budget range...</option>
+                    <option value="Under ₹5,000">Under ₹5,000</option>
+                    <option value="₹5,000–15,000">₹5,000–15,000</option>
+                    <option value="₹15,000–30,000">₹15,000–30,000</option>
+                    <option value="₹30,000+">₹30,000+</option>
+                    <option value="Prefer to discuss">Prefer to discuss</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="preferredTimeline">Preferred Timeline</label>
+                  <select id="preferredTimeline" class="form-control">
+                    <option value="" selected>Select timeline...</option>
+                    <option value="ASAP (within a week)">ASAP (within a week)</option>
+                    <option value="2–3 weeks">2–3 weeks</option>
+                    <option value="1 month+">1 month+</option>
+                    <option value="Flexible">Flexible</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Description Textarea -->
+              <div class="form-group">
+                <label for="projectDescription">Project Description <span class="req">*</span></label>
+                <textarea id="projectDescription" class="form-control" placeholder="Tell me what problem you're trying to solve, or what you'd like built. The more detail, the faster I can scope it." required></textarea>
+                <span class="form-err-msg" id="errDesc"></span>
+              </div>
+
+              <!-- Form Submission Status Banner -->
+              <div class="form-submission-status" id="formSubmissionStatus"></div>
+
+              <!-- Submit & WhatsApp CTA -->
+              <div class="form-submit-row">
+                <button type="submit" class="btn-hyper-peach btn-form-submit">
+                  Send Project Details →
+                </button>
+
+                <p class="micro-trust-line">
+                  Your information stays private and is only used to discuss your project. No spam, no cold follow-ups.
+                </p>
+
+                <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="secondary-whatsapp-btn" id="secondaryWhatsAppBtn">
+                  <span>💬</span> Message me directly on WhatsApp →
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Final CTA Section
+         ====================================================================== -->
+    <section class="section-spacing">
+      <div class="container">
+        <div class="final-cta-box">
+          <h2>Let's build something that actually works</h2>
+          <p>
+            Have a repetitive task, a data problem, or an idea for an AI-powered tool? Let's turn it into working software — clean code and full documentation included.
+          </p>
+          <a href="#contact" class="btn-hyper-peach" style="padding: 15px 36px; font-size: 15px;">Start a Conversation →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Footer (4 Columns + Copyright Bar)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-columns-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-brand-col">
+          <a href="#hero" class="nav-logo">Sharmika<span>.</span></a>
+          <p>
+            Python &amp; AI engineer building tools that ship. Currently a 3rd-year AI &amp; Data Science student, open for freelance work.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-nav-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="footer-nav-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">Python Automation</a></li>
+            <li><a href="#services">Web Scraping</a></li>
+            <li><a href="#services">AI &amp; LLM Integration</a></li>
+            <li><a href="#services">Data Dashboards</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Connect -->
+        <div class="footer-nav-col">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="https://github.com/sharmika-murugesan" target="_blank" rel="noopener noreferrer">🐙 GitHub</a></li>
+            <li><a href="https://linkedin.com/in/sharmika-murugesan" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a></li>
+            <li><a href="mailto:sharmika.murugesan@example.com">✉️ Email</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        © 2026 Sharmika Murugesan. All rights reserved. · Built with Python, curiosity, and too much coffee. ☕
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
