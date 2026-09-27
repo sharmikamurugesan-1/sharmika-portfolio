@@ -1,6 +1,6 @@
 /* ==========================================================================
    SHARMIKA MURUGESAN — PORTFOLIO CLIENT ENGINE
-   Hyper3D Interactive Studio Simulator, Dynamic WhatsApp Builder, Form Validation,
+   Signature Interactive Studio Simulator, Dynamic WhatsApp Builder, Form Validation,
    Project Filtering, and Scroll Effects.
    ========================================================================== */
 
@@ -72,7 +72,7 @@ function initNavbar() {
 }
 
 /* --------------------------------------------------------------------------
-   2. Hyper3D Interactive Studio Simulation
+   2. Signature Interactive Studio Simulation
    -------------------------------------------------------------------------- */
 const STUDIO_TOOLS = {
   automation: {

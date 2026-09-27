@@ -1,13 +1,13 @@
 /* ==========================================================================
    SHARMIKA MURUGESAN — PORTFOLIO DESIGN SYSTEM
-   Directly Inspired by Hyper3D.ai: Dark Luxury, Atmospheric Spotlight Blooms,
+   Directly Inspired by Modern Dark Aesthetic: Dark Luxury, Atmospheric Spotlight Blooms,
    Warm Peach Glow CTAs, Translucent Bento Cards, and Interactive Studio.
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-  /* Hyper3D Color Palette */
+  /* Signature Color Palette */
   --bg-deep: #08090d;
   --bg-charcoal: #0e0f17;
   --bg-surface: #141521;
@@ -20,7 +20,7 @@
   --border-medium: rgba(255, 255, 255, 0.14);
   --border-glow: rgba(254, 192, 176, 0.35);
   
-  /* Hyper3D Signature Warm Peach / Gold Accent (from Hyper3D "Start Creating" button) */
+  /* Signature Signature Warm Peach / Gold Accent (from Signature "Start Creating" button) */
   --peach-100: #fff0eb;
   --peach-200: #fedec8;
   --peach-300: #f9c0b0;
@@ -105,9 +105,9 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   Hyper3D Atmospheric Lighting Canvas & Background Blobs
+   Signature Atmospheric Lighting Canvas & Background Blobs
    ========================================================================== */
-.hyper-ambient-lighting {
+.ambient-lighting-canvas {
   position: fixed;
   inset: 0;
   pointer-events: none;
@@ -205,7 +205,7 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   Navigation Bar (Hyper3D Inspired)
+   Navigation Bar (Signature Inspired)
    ========================================================================== */
 .site-nav {
   position: fixed;
@@ -255,7 +255,7 @@ button, input, select, textarea {
   color: var(--peach-300);
 }
 
-/* Hyper3D status pill next to logo (like "7-Day Trial Free" in Hyper3D) */
+/* Signature status pill next to logo (like "7-Day Trial Free" in Signature) */
 .nav-status-pill {
   display: inline-flex;
   align-items: center;
@@ -320,8 +320,8 @@ button, input, select, textarea {
   gap: 16px;
 }
 
-/* Hyper3D Signature Warm Peach Glowing Pill Button */
-.btn-hyper-peach {
+/* Signature Signature Warm Peach Glowing Pill Button */
+.btn-glow-peach {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -339,14 +339,14 @@ button, input, select, textarea {
   transition: var(--transition-smooth);
 }
 
-.btn-hyper-peach:hover {
+.btn-glow-peach:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 45px rgba(254, 192, 176, 0.65);
   filter: brightness(1.04);
 }
 
 /* Ghost Glass Button */
-.btn-hyper-ghost {
+.btn-glass-ghost {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -364,7 +364,7 @@ button, input, select, textarea {
   transition: var(--transition-smooth);
 }
 
-.btn-hyper-ghost:hover {
+.btn-glass-ghost:hover {
   background: rgba(255, 255, 255, 0.09);
   border-color: rgba(255, 255, 255, 0.25);
   transform: translateY(-2px);
@@ -411,7 +411,7 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   Hero Section & Interactive Studio (Exact Hyper3D Layout)
+   Hero Section & Interactive Studio (Exact Signature Layout)
    ========================================================================== */
 .hero-section {
   padding-top: 150px;
@@ -473,17 +473,17 @@ button, input, select, textarea {
   margin-bottom: 48px;
 }
 
-.hero-actions .btn-hyper-peach {
+.hero-actions .btn-glow-peach {
   padding: 14px 32px;
   font-size: 15px;
 }
 
-.hero-actions .btn-hyper-ghost {
+.hero-actions .btn-glass-ghost {
   padding: 14px 28px;
   font-size: 15px;
 }
 
-/* Hyper3D 5-Metric Stats Ribbon */
+/* Signature 5-Metric Stats Ribbon */
 .hero-stats-ribbon {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -528,7 +528,7 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   Hero Right: Hyper3D Interactive Studio Interface Widget
+   Hero Right: Signature Interactive Studio Interface Widget
    (Mirrors screenshot 1: Left tool icons + Glass Card + Generate Button)
    ========================================================================== */
 .hero-interactive-studio {
@@ -719,7 +719,7 @@ button, input, select, textarea {
   color: var(--peach-300);
 }
 
-/* Studio Bottom Bar: Generate Button & Model Spec (Matching Hyper3D) */
+/* Studio Bottom Bar: Generate Button & Model Spec (Matching Signature) */
 .studio-footer {
   display: flex;
   align-items: center;
@@ -864,7 +864,7 @@ button, input, select, textarea {
   margin-top: 32px;
 }
 
-/* Right Side: Hyper3D Bento Info Cards */
+/* Right Side: Signature Bento Info Cards */
 .about-bento-cards {
   display: flex;
   flex-direction: column;
@@ -916,7 +916,7 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   Services Section (Hyper3D Bento Grid)
+   Services Section (Signature Bento Grid)
    ========================================================================== */
 .services-bento-grid {
   display: grid;
@@ -1076,7 +1076,7 @@ button, input, select, textarea {
 
 /* ==========================================================================
    Projects Section (5 Case Studies with Visual Transformations)
-   Inspired by Hyper3D Images 2 & 3: Input ➔ Pipeline ➔ Output
+   Inspired by Signature Images 2 & 3: Input ➔ Pipeline ➔ Output
    ========================================================================== */
 .projects-header-filter {
   display: flex;
@@ -1193,7 +1193,7 @@ button, input, select, textarea {
   margin-bottom: 24px;
 }
 
-/* Hyper3D-Style Visual Transformation Diagram (Input ➔ Engine ➔ Output) */
+/* Signature-Style Visual Transformation Diagram (Input ➔ Engine ➔ Output) */
 .transformation-diagram {
   background: rgba(10, 11, 18, 0.7);
   border: 1px solid var(--border-subtle);
@@ -1734,7 +1734,7 @@ textarea.form-control {
 }
 
 /* ==========================================================================
-   Final CTA Banner (Hyper3D Volumetric Box)
+   Final CTA Banner (Signature Volumetric Box)
    ========================================================================== */
 .final-cta-box {
   background: radial-gradient(circle 800px at 50% -20%, rgba(254, 192, 176, 0.14) 0%, rgba(20, 21, 33, 0.9) 70%);
@@ -1866,7 +1866,7 @@ textarea.form-control {
 
 @media (max-width: 768px) {
   .nav-links,
-  .nav-actions .btn-hyper-peach {
+  .nav-actions .btn-glow-peach {
     display: none;
   }
   .mobile-nav-toggle {
@@ -1900,4 +1900,98 @@ textarea.form-control {
   .case-features-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ==========================================================================
+   Case Study Visual Showcase & UI Mockups
+   ========================================================================== */
+.case-visual-preview {
+  background: rgba(10, 11, 18, 0.85);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  margin-bottom: 24px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+.case-visual-preview::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(254, 192, 176, 0.4), transparent);
+}
+
+.mockup-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.mockup-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mockup-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.mockup-title {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+.mockup-badge-live {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  background: rgba(16, 185, 129, 0.12);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.mockup-grid-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .mockup-grid-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mockup-card-metric {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+}
+
+.mockup-metric-num {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.mockup-metric-lbl {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
 }
