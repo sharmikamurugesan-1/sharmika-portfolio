@@ -309,11 +309,10 @@ function initProjectFilter() {
 }
 
 /* --------------------------------------------------------------------------
-   4. Contact Form Validation & Dynamic WhatsApp Builder
+   4. Contact Form Validation & Submission Handler
    -------------------------------------------------------------------------- */
 function initContactForm() {
   const form = document.getElementById('projectInquiryForm');
-  const whatsappBtn = document.getElementById('secondaryWhatsAppBtn');
   const statusBanner = document.getElementById('formSubmissionStatus');
 
   const nameInput = document.getElementById('fullName');
@@ -324,26 +323,6 @@ function initContactForm() {
   const timelineSelect = document.getElementById('preferredTimeline');
   const descTextarea = document.getElementById('projectDescription');
 
-  // Dynamically update WhatsApp URL with pre-filled content
-  function updateWhatsAppUrl() {
-    if (!whatsappBtn) return;
-    const name = nameInput.value.trim() || 'Visitor';
-    const service = serviceSelect.value || 'General Inquiry';
-    const budget = budgetSelect.value || 'To be discussed';
-    const timeline = timelineSelect.value || 'Flexible';
-    const desc = descTextarea.value.trim() || 'I would like to discuss a freelance project.';
-
-    const message = `Hi Sharmika! I'm ${name}.\nI'm interested in: ${service}\nBudget: ${budget}\nTimeline: ${timeline}\n\nProject details:\n${desc}`;
-    const encoded = encodeURIComponent(message);
-    // User can customize their actual phone number here
-    whatsappBtn.href = `https://wa.me/91XXXXXXXXXX?text=${encoded}`;
-  }
-
-  // Listen to input changes to update WhatsApp link live
-  [nameInput, phoneInput, emailInput, serviceSelect, budgetSelect, timelineSelect, descTextarea].forEach(el => {
-    if (el) el.addEventListener('input', updateWhatsAppUrl);
-  });
-
   if (!form) return;
 
   form.addEventListener('submit', (e) => {
@@ -353,61 +332,96 @@ function initContactForm() {
     // Reset error messages
     document.querySelectorAll('.form-err-msg').forEach(msg => msg.textContent = '');
 
+    const name = nameInput ? nameInput.value.trim() : '';
+    const phone = phoneInput ? phoneInput.value.trim() : '';
+    const email = emailInput ? emailInput.value.trim() : '';
+    const service = serviceSelect ? serviceSelect.value : '';
+    const budget = budgetSelect ? budgetSelect.value : '';
+    const timeline = timelineSelect ? timelineSelect.value : '';
+    const desc = descTextarea ? descTextarea.value.trim() : '';
+
     // Full Name check
-    if (!nameInput.value.trim()) {
-      document.getElementById('errName').textContent = 'Please enter your full name.';
+    if (!name) {
+      const errName = document.getElementById('errName');
+      if (errName) errName.textContent = 'Please enter your full name.';
       isValid = false;
     }
 
     // Phone / WhatsApp check
-    if (!phoneInput.value.trim() || phoneInput.value.trim().length < 7) {
-      document.getElementById('errPhone').textContent = 'Please provide a valid phone or WhatsApp number with country code.';
+    if (!phone || phone.length < 7) {
+      const errPhone = document.getElementById('errPhone');
+      if (errPhone) errPhone.textContent = 'Please provide a valid phone or WhatsApp number with country code.';
       isValid = false;
     }
 
     // Email check
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(emailInput.value.trim())) {
-      document.getElementById('errEmail').textContent = 'Please provide a valid email address.';
+    if (!emailPattern.test(email)) {
+      const errEmail = document.getElementById('errEmail');
+      if (errEmail) errEmail.textContent = 'Please provide a valid email address.';
       isValid = false;
     }
 
     // Service check
-    if (!serviceSelect.value) {
-      document.getElementById('errService').textContent = 'Please select a service type.';
+    if (!service) {
+      const errService = document.getElementById('errService');
+      if (errService) errService.textContent = 'Please select a service type.';
       isValid = false;
     }
 
     // Description check
-    if (!descTextarea.value.trim() || descTextarea.value.trim().length < 15) {
-      document.getElementById('errDesc').textContent = 'Please provide at least 15 characters describing your project problem.';
+    if (!desc || desc.length < 15) {
+      const errDesc = document.getElementById('errDesc');
+      if (errDesc) errDesc.textContent = 'Please provide at least 15 characters describing your project problem.';
       isValid = false;
     }
 
     if (isValid) {
       const submitBtn = form.querySelector('.btn-form-submit');
-      const originalText = submitBtn.innerHTML;
-      submitBtn.innerHTML = 'Sending Details...';
-      submitBtn.disabled = true;
+      const originalText = submitBtn ? submitBtn.innerHTML : 'Send Project Details →';
+      if (submitBtn) {
+        submitBtn.innerHTML = 'Sending Details...';
+        submitBtn.disabled = true;
+      }
+
+      // Persist inquiry locally
+      try {
+        const inquiries = JSON.parse(localStorage.getItem('sharmika_project_inquiries') || '[]');
+        inquiries.push({
+          name,
+          phone,
+          email,
+          service,
+          budget: budget || 'Prefer to discuss',
+          timeline: timeline || 'Flexible',
+          description: desc,
+          submittedAt: new Date().toISOString()
+        });
+        localStorage.setItem('sharmika_project_inquiries', JSON.stringify(inquiries));
+      } catch (err) {
+        console.warn('LocalStorage unavailable for inquiry tracking', err);
+      }
 
       setTimeout(() => {
-        statusBanner.className = 'form-submission-status success';
-        statusBanner.innerHTML = `
-          <strong>✓ Thank you, ${nameInput.value.trim()}!</strong><br>
-          Your project inquiry has been recorded. Sharmika will review your details and reply within 24 hours.
-        `;
-        submitBtn.innerHTML = 'Sent Successfully ✓';
+        if (statusBanner) {
+          statusBanner.className = 'form-submission-status success';
+          statusBanner.innerHTML = `
+            <strong>✓ Thank you, ${name}!</strong><br>
+            Your project inquiry has been recorded. Sharmika will review your details and reply within 24 hours.
+          `;
+        }
+        if (submitBtn) {
+          submitBtn.innerHTML = 'Sent Successfully ✓';
+        }
         form.reset();
-        updateWhatsAppUrl();
 
         setTimeout(() => {
-          submitBtn.innerHTML = originalText;
-          submitBtn.disabled = false;
+          if (submitBtn) {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+          }
         }, 4000);
       }, 700);
     }
   });
-
-  // Initial WhatsApp URL update
-  updateWhatsAppUrl();
 }

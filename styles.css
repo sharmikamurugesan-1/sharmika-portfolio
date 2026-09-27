@@ -980,6 +980,19 @@ button, input, select, textarea {
   border: 1px solid rgba(254, 192, 176, 0.2);
   padding: 4px 10px;
   border-radius: var(--radius-full);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.service-proof-badge:hover {
+  background: rgba(254, 192, 176, 0.2);
+  border-color: var(--peach-200);
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .service-bento-card h3 {
